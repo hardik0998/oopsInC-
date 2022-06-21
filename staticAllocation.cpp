@@ -1,30 +1,6 @@
 // Static Allocation
 #include<iostream>
-using namespace std;
-
-class hero{
-    int health;
-    char level;
-
-    public:
-    int power;
-    string name;
-    int getHealth(){
-        return health;
-    }
-    void setHealth(int h){
-        health  = h;
-
-    }
-      char getLevel(){
-        return level;
-    }
-    void setLevel(char l){
-        level  = l;
-
-    }
-};
-
+#include"hero.cpp"
 
 class temp{
 
