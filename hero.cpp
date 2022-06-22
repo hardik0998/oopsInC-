@@ -1,5 +1,4 @@
 #include<iostream>
-#include<string>
 using namespace std;
 
 class hero{
@@ -7,6 +6,17 @@ class hero{
     char level;
 
     public:
+    hero(){
+        cout<<"Constructor called"<<endl;
+    }
+
+    hero(int power){
+        cout<<"this "<<this<<endl;
+        // This keyword stores adress of current object , it acts like a pointer
+        this->power = power;
+    }
+
+
     int power;
     string name;
     

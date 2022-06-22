@@ -8,7 +8,7 @@ class temp{
 
 
 int main(){
-hero h1;
+hero h1(20);
 h1.power=100;
 h1.setHealth(45);
 h1.setLevel('A');
@@ -21,8 +21,8 @@ cout<<h1.getLevel()<<endl;
 
 
 
-// cout<<" size "<<sizeof(h1)<<endl;
-temp t1; // This is  a temporary empty class;
-// cout<<" size "<<sizeof(t1)<<endl;
+cout<<" size "<<sizeof(h1)<<endl;
+temp t1; // This is  a temporary empty class object;
+cout<<" size "<<sizeof(t1)<<endl;
 
 }
