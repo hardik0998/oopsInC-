@@ -6,6 +6,10 @@ class hero{
     char level;
 
     public:
+
+
+
+
     hero(){
         cout<<"Constructor called"<<endl;
     }
@@ -16,10 +20,22 @@ class hero{
         this->power = power;
     }
 
+// copy constructor
+    hero(hero& temp){   // pass by reference
+        cout<<"copy constructor created"<<endl;
+        this->power = temp.power;
+        this->name = temp.name;
+    }
 
     int power;
     string name;
     
+    // print function 
+    void print(){
+        cout<<"Power "<<this->power<<endl;
+        cout<<"Name "<<this->name<<endl;
+    }
+
     int getHealth(){
         return health;
     }
