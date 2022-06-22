@@ -50,4 +50,10 @@ class hero{
         level  = l;
 
     }
+
+
+
+    ~hero(){
+        cout<<"destructor called"<<endl;
+    }
 };
